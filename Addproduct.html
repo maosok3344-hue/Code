@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Add Product – StockPro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <aside>
+      <div class="logo">MR MAO SHOP</div>
+      <button onclick="window.location.href='dashbord.html'">Dashboard</button>
+      <button onclick="window.location.href='stork.html'">Stock</button>
+      <button class="on" onclick="window.location.href='Addproduct.html'">Add Product</button>
+      <button onclick="window.location.href='Order/success.html'">Order / Success</button>
+      <button class="out" onclick="window.location.href='login.html'">Log out</button>
+    </aside>
+    <main>
+      <h2>បន្ថែមផលិតផលរបស់អ្នក</h2>
+      <div class="card form">
+        <label>ឈ្មោះផលិតផល</label><input placeholder="e.g. Gaming Headset">
+        <label>វណភាព</label><input placeholder="e.g. GH-500">
+        <label>ទំនិញ</label><input placeholder="e.g. Accessories">
+        <label>គុណភាព</label><input type="number" min="0" value="10">
+        <label>តម្លៃផលិតផល</label><input type="number" min="0" step="0.01" placeholder="25.00">
+        <button class="btn" onclick="window.location.href='Order/success.html'">Save product</button>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

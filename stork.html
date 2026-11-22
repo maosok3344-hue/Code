@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stock – StockPro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <aside>
+      <div class="logo">MR MAO SHOP</div>
+      <button onclick="window.location.href='dashbord.html'">Dashboard</button>
+      <button class="on" onclick="window.location.href='stork.html'">Stock</button>
+      <button onclick="window.location.href='Addproduct.html'">Add Product</button>
+      <button onclick="window.location.href='Order/success.html'">Order / Success</button>
+      <button class="out" onclick="window.location.href='login.html'">Log out</button>
+    </aside>
+    <main>
+      <h2>ការគ្រប់គ្រងស្ដុក 🛺</h2>
+      <div class="card">
+        <div class="tools">
+          <input placeholder="Search product or SKU">
+          <span class="sp"></span>
+          <button class="btn" onclick="window.location.href='Addproduct.html'">+ Add New</button>
+          <button class="btn alt" onclick="window.location.href='Order/success.html'">Complete Order</button>
+        </div>
+        <div class="wrap">
+          <table>
+            <thead>
+              <tr><th>Product</th><th>SKU</th><th>Category</th><th>Qty</th><th>Price</th><th>Status</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Wireless Mouse</td><td>WM-201</td><td>Accessories</td><td>142</td><td>$12.50</td><td><span class="pill">In stock</span></td></tr>
+              <tr><td>USB-C Cable 1m</td><td>UC-110</td><td>Accessories</td><td>18</td><td>$4.20</td><td><span class="pill low">Low stock</span></td></tr>
+              <tr><td>Mechanical Keyboard</td><td>MK-330</td><td>Peripherals</td><td>64</td><td>$58.00</td><td><span class="pill">In stock</span></td></tr>
+              <tr><td>27in Monitor</td><td>MN-270</td><td>Displays</td><td>9</td><td>$189.00</td><td><span class="pill low">Low stock</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

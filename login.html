@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login – MR MAO SHOP</title>
+  <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+  <section id="login">
+    <div class="hero">
+      <b>MR MAO SHOP</b>
+      <h1>សូមស្វាគមន៏មកកាន់ហាង<br>ក្រុងកំពង់ឆ្នាំង.</h1>
+      <p>Inventory, products and reports in one place for specail price. <br>នៅទីនេះជាមួយលោកអ្នក</p>
+    </div>
+    <div class="formside">
+      <div class="box">
+        <h2>SIGN IN</h2>
+        <p class="sub">Welcome back. Enter your details.</p>
+        <label for="u">ឈ្មោះរបស់លោកអ្នក</label>
+        <input id="u" placeholder="admin" autocomplete="username">
+        <label for="p">ពាក្យសម្ងាត់</label>
+        <input id="p" type="password" placeholder="Password" autocomplete="current-password">
+        <button class="btn full" id="loginBtn">Login</button>
+        <div class="err" id="err" role="alert"></div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const USER = "admin", PASS = "admin123";
+    const $ = id => document.getElementById(id);
+
+    $("loginBtn").onclick = () => {
+      if ($("u").value.trim() === USER && $("p").value === PASS) {
+        window.location.href = "dashbord.html";
+      } else {
+        $("err").textContent = "Wrong username or password.";
+      }
+    };
+    $("p").addEventListener("keydown", e => { if (e.key === "Enter") $("loginBtn").click(); });
+  </script>
+</body>
+</html>
